@@ -1,0 +1,346 @@
+
+<!-- saved from url=(0053)http://www.gautamkamath.com/courses/CS480-wi2021.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>CS 480/680 - Introduction to Machine Learning - Winter 2021</title>
+<style type="text/css">
+  .selected {
+    width:100%;
+    display: block;
+  }
+  .regular {
+    width:100%;
+    display: none;
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+  td {
+    text-align: center;
+  }
+</style>
+  </head>
+
+<body bgcolor="white" text="black" link="blue" vlink="blue" alink="blue" data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
+
+  <h1>CS 480/680 - Introduction to Machine Learning - Winter 2021</h1>
+
+  <h2>Logistics</h2>
+  <ul>
+    <li>Instructor: <a href="http://www.gautamkamath.com/">Gautam Kamath</a></li>
+    <li>Piazza: Link <a href="http://www.piazza.com/uwaterloo.ca/winter2021/cs480680/home">here</a>.</li>
+    <li>Lecture: Recorded videos should be released twice a week, on LEARN and <a href="https://www.youtube.com/playlist?list=PLmd_zeMNzSvR7rIIBTf3TRX_8rk7P2Fkc">Youtube</a>.</li>
+    <li>Office Hours: Tuesdays and Friday, 2-3 PM Waterloo Time, or by email appointment.</li>
+    <li>TAs:
+      <ul>
+        <li>Hu, Theo (z97hu)</li>
+        <li>Ivashkevich, Stan (sivashke)</li>
+        <li>Sethi, Udhav (u2sethi)</li>
+        <li>Turnbull, Augustus (a2turnbu)</li>
+        <li>Zhang, Ruixue (r267zhan)</li>
+      </ul>
+    </li>
+    <li>Syllabus: <a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/syllabus.pdf">here</a>.</li>
+  </ul>
+  This course has a Piazza (for discussion) and a Microsoft Teams (for office hours). Please contact the instructor if you are not in both of these.
+
+  <h2>Weekly Schedule</h2>
+  There will be two lectures posted each week, on Tuesday and Thursday. <br>
+  There will also be one assignment posted (roughly) every other week, for a total of five. <br>
+  There will be one final project at the end of the course.
+  All deliverables are due at 11:59 PM Waterloo time on the stated date.
+
+  
+
+  <h2>Lectures</h2>
+  <table style="width:100%">
+    <tbody><tr>
+      <th>Lecture Number</th>
+      <th>Date</th>
+      <th>Topic</th>
+      <th>Slides</th>
+      <th>Notes</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1/12/2020</td>
+      <td>Logistics and Intro</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec0-slides.pdf">pdf</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1/12/2020</td>
+      <td>Perceptron</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec1-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec1-notes.pdf">pdf</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1/14/2020</td>
+      <td>Linear Regression</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec2-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec2-notes.pdf">pdf</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1/19/2020</td>
+      <td>Optimization Basics</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec3-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec3-notes.pdf">pdf</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1/21/2020</td>
+      <td>Statistics Basics</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec4-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec4-notes.pdf">pdf</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1/26/2020</td>
+      <td>k-Nearest Neighbours</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec5-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec5-notes.pdf">pdf</a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1/28/2020</td>
+      <td>Logistic Regression</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec6-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec6-notes.pdf">pdf</a></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>2/2/2020</td>
+      <td>Hard-margin SVM</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec7-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec7-notes.pdf">pdf</a></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>2/4/2020</td>
+      <td>Soft-margin SVM</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec8-slides.pdf">pdf</a></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>2/9/2020</td>
+      <td>Kernels</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec9-slides.pdf">pdf</a></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>2/11/2020</td>
+      <td>Decision Trees</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec10-slides.pdf">pdf</a></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>2/23/2020</td>
+      <td>Bagging and Boosting</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec11-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec11-notes.pdf">pdf</a></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>2/25/2020</td>
+      <td>Multi-Layer Perceptron</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec12-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec12-notes.pdf">pdf</a></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>3/2/2020</td>
+      <td>Deep Neural Networks</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec13-slides.pdf">pdf</a></td>
+      <td><a href="https://www.deeplearningbook.org/contents/optimization.html">html</a></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>3/4/2020</td>
+      <td>Convolutional Neural Networks</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec14-slides.pdf">pdf</a></td>
+      <td><a href="https://www.deeplearningbook.org/contents/convnets.html">html</a></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>3/9/2020</td>
+      <td>Recurrent Neural Networks</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec15-slides.pdf">pdf</a></td>
+      <td><a href="https://www.deeplearningbook.org/contents/rnn.html">html</a></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>3/11/2020</td>
+      <td>Mixture Models</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec16-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec16-notes.pdf">pdf</a></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>3/18/2020</td>
+      <td>Boltzmann Machines</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec17-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec17-notes.pdf">pdf</a></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>3/23/2020</td>
+      <td>Belief Networks</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec18-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec18-notes.pdf">pdf</a></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>3/25/2020</td>
+      <td>GANs</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec19-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec19-notes.pdf">pdf</a></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>3/30/2020</td>
+      <td>Flows</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec20-slides.pdf">pdf</a></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>4/1/2020</td>
+      <td>Robustness</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec21-slides.pdf">pdf</a></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>4/6/2020</td>
+      <td>Attention</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec22-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec22-notes.pdf">pdf</a></td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>4/13/2020</td>
+      <td>Privacy</td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec23-slides.pdf">pdf</a></td>
+      <td><a href="http://www.gautamkamath.com/courses/CS480-wi2021-files/lec23-notes.pdf">pdf</a></td>
+    </tr>
+  
+  </tbody></table>
+
+  <h2>Assignments</h2>
+  There will be five assignments, roughly every other week.
+  <ul>
+    <li>Assignment 1. Posted on January 14, due January 28. Coverage: Lectures 1 to 4.</li>
+    <li>Assignment 2. Posted on January 28, due February 11. Coverage: Lectures 5 to 8. </li>
+    <li>Assignment 3. Posted on February 23, due March 9. Coverage: Lectures 9 to 12.</li>
+    <li>Assignment 4. Posted on March 10, due March 24. Coverage: Lectures 13 to 16.</li>
+    <li>Assignment 5. Posted on March 26, due April 9. Coverage: Lectures 17 to 21.</li>
+  </ul>
+
+  <h2>Project</h2>
+  The project for this course will differ depending on whether you are in CS 480 or 680.
+  <h3>CS 480 students</h3>
+  There is a <a href="https://www.kaggle.com/c/cs480680-winter2021/overview">Kaggle competition</a>.
+  The deadline is April 19.
+  <h3>CS 680 students</h3>
+  You need to conduct a research project, which could be an attempt to beat the state-of-the-art performance on an interesting dataset, or an unexpected application of machine learning algorithms to a different field, or designing a novel algorithm to address a need in machine learning, or theoretically analyzing the performance of a machine learning algorithm (new or old). 
+  A literature survey on a new hot topic in ML is also possible.
+  You may work in pairs for this project.<br><br>
+
+You project should
+<ul>
+  <li>relate to machine learning (obviously)</li>
+  <li>allow you to learn something new and interesting</li>
+  <li>be significant and publishable in a top machine learning conference</li>
+</ul>
+
+The project proposal will be due on February 23, and worth 5% of the final grade.
+Please concisely describe what your project is about, some related works (no need to be thorough yet), what is your execution plan, what do you expect to learn/contribute, and how are you going to evaluate your results. 
+We expect the proposal to be 2 to 4 pages (excluding references). 
+We will assign a TA or instructor for your project. You are strongly suggested to remain contact with this TA or instructor throughout the term in order to make sufficient progress. <br><br>
+
+The project report will be due on April 19, and worth 15% of the final grade.
+Please summarize all your findings (empirical, algorithmic, theoretical) in a scientific report. 
+We expect there is an introduction section, a background section, a main result section, and a conclusion section. 
+Depending on your project, you may include an experimental section and/or discussion section. 
+Please always give proper citations to prior work or results. 
+Be precise and concise. We expect the report to be at most 8 pages (excluding references). <br><br>
+
+Your project report will be evaluated on its clarity, significance, rigor, presentation, and completeness.
+  
+  
+  <h2>Books and References</h2>
+  Notes will be provided. Additionally, the following are excellent resources.
+  <ul>
+    <li><a href="https://d2l.ai/">Dive into Deep Learning</a>, by Aston Zhang, Zack C. Lipton, Mu Li and Alex J. Smola.</li>
+    <li><a href="https://www.deeplearningbook.org/">Deep Learning</a>, by Ian Goodfellow, Yoshua Bengio and Aaron Courville.</li>
+    <li><a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/">Understanding Machine Learning: From Theory to Algorithms</a>, by Shai Shalev-Shwartz and Shai Ben-David..</li>
+    <li><a href="https://web.stanford.edu/~hastie/ElemStatLearn/">Elements of Statistical Learning </a>, by Trevor Hastie, Robert Tibshirani and Jerome Friedman.</li>
+  </ul>
+  
+  <h2>Grading</h2>
+  Grades for this course will be determined with the following breakdown:
+  <ul>
+    <li>Assignments: 80%. There are five total assignments, your lowest score will be dropped.</li>
+    <li>Project: 20%. Either a Kaggle competition (CS 480) or a research project (CS 680). </li>
+  </ul>
+
+  <h2>Resources</h2>
+  Here are some top conferences and journals in machine learning. They may be good places to look for project ideas.
+  I believe all of them should be open access. More generally, you should <i>never</i> have to pay to access an academic article, especially when you are affiliated with a university.
+  Contact me if you run into any issues accessing any academic article and I'll write up some directions.
+  <ul>
+    <li><a href="https://dblp.org/db/conf/nips/index.html">NeurIPS</a></li>
+    <li><a href="https://dblp.org/db/conf/icml/index.html">ICML</a></li>
+    <li><a href="https://dblp.org/db/conf/iclr/index.html">ICLR</a></li>
+    <li><a href="https://dblp.org/db/conf/colt/index.html">COLT</a></li>
+    <li><a href="https://dblp.org/db/conf/aistats/index.html">AISTATS</a></li>
+    <li><a href="https://www.jmlr.org/papers/">JMLR</a></li>
+  </ul>
+
+  <h2>Policies</h2>
+  Academic Integrity: In order to maintain a culture of academic integrity, members of the University of Waterloo community are expected to promote honesty, trust, fairness, respect and responsibility. Check the university website for more information.<br><br>
+
+  Grievance: A student who believes that a decision affecting some aspect of his/her university life has been unfair or unreasonable may have grounds for initiating a grievance. Read Policy 70, Student Petitions and Grievances, Section 4. When in doubt please be certain to contact the department's administrative assistant who will provide further assistance.<br><br>
+
+  Discipline: A student is expected to know what constitutes academic integrity to avoid committing an academic offence, and to take responsibility for his/her actions. A student who is unsure whether an action constitutes an offence, or who needs help in learning how to avoid offences (e.g., plagiarism, cheating) or about "rules" for group work/collaboration should seek guidance from the course instructor, academic advisor, or the undergraduate Associate Dean. For information on categories of offences and types of penalties, students should refer to Policy 71, Student Discipline. For typical penalties check Guidelines for the Assessment of Penalties.<br><br>
+
+  Appeals: A decision made or penalty imposed under Policy 70 (Student Petitions and Grievances) (other than a petition) or Policy 71 (Student Discipline) may be appealed if there is a ground. A student who believes he/she has a ground for an appeal should refer to Policy 72 (Student Appeals).<br><br>
+
+  Note for Students with Disabilities: The Office for Persons with Disabilities (OPD), located in Needles Hall, Room 1132, collaborates with all academic departments to arrange appropriate accommodations for students with disabilities without compromising the academic integrity of the curriculum. If you require academic accommodations to lessen the impact of your disability, please register with the OPD at the beginning of each academic term.<br><br>
+
+  Mental Health: If you or anyone you know experiences any academic stress, difficult life events, or feelings like anxiety or depression, we strongly encourage you to seek support.<br><br>
+
+On-campus Resources:
+<ul>
+  <li>Campus Wellness https://uwaterloo.ca/campus-wellness</li>
+  <li>Counselling Services: counselling.services@uwaterloo.ca 519-888-4567 ext 32655 Needles Hall North 2nd floor, (NH 2401)</li>
+  <li>MATES: one-to-one peer support program offered by Federation of Students (FEDS) and Counselling Services: mates@uwaterloo.ca</li>
+  <li>Health Services service: located across the creek from Student Life Centre, 519-888-4096</li>
+</ul>
+
+Off-campus Resources:
+<ul>
+  <li>Good2Talk (24/7): Free confidential help line for post-secondary students. Phone: 1-866-925-5454</li>
+  <li>Here 24/7: Mental Health and Crisis Service Team. Phone: 1-844-437-3247</li>
+  <li>OK2BME: set of support services for lesbian, gay, bisexual, transgender or questioning teens in Waterloo. Phone: 519-884-0000 extension 213</li>
+</ul>
+
+Diversity: It is our intent that students from all diverse backgrounds and perspectives be well served by this course, and that students' learning needs be addressed both in and out of class. We recognize the immense value of the diversity in identities, perspectives, and contributions that students bring, and the benefit it has on our educational environment. Your suggestions are encouraged and appreciated. Please let us know ways to improve the effectiveness of the course for you personally or for other students or student groups. In particular:
+<ul>
+  <li>We will gladly honour your request to address you by an alternate/preferred name or gender pronoun. Please advise us of this preference early in the semester so we may make appropriate changes to our records.</li>
+  <li>We will honour your religious holidays and celebrations. Please inform of us these at the start of the course.</li>
+  <li>We will follow AccessAbility Services guidelines and protocols on how to best support students with different learning needs.</li>
+</ul>
+
+
+  <h2>Acknowledgments</h2>
+  This course relies instrumentally upon content created by Yaoliang Yu.
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
