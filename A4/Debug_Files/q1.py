@@ -33,7 +33,22 @@ def GMM(X, K_RANGE):
     loss = [0.0] * MAX_ITER
 
     for iter in tqdm(range(MAX_ITER), total=MAX_ITER):
-        pass
+        for k in range(K_RANGE):
+            exp_power = np.dot((X-mu[k]) ** 2, 1/S[k]) * (-1/2)
+            # if iter==2:
+                # print(pi[k] * np.power(np.prod(S[k]), -1/2) * np.exp(exp_power))
+            r[:,k] = pi[k] * np.power(np.prod(S[k]), -1/2) * np.exp(exp_power)
+        r_total = np.sum(r, axis=1)
+        r = r / r_total[:,None]
+        loss[iter] = -np.sum(np.log(r_total + EPSILON))
+
+        if iter > 1 and abs(loss[iter] - loss[iter-1]) <= TOLERANCE * abs(loss[iter]):
+            break
+        
+        r_total_i_wise = np.sum(r, axis=0)
+        pi = r_total_i_wise / N
+        mu = np.dot(r.T, X) / r_total_i_wise[:,None]
+        S = np.dot(r.T, X ** 2) / r_total_i_wise[:,None] - mu ** 2 + EPSILON
 
     return pi, mu, S, loss
 
