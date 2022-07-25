@@ -63,7 +63,6 @@ class Discriminator(nn.Module):
 def train(generator, generator_optimizer, discriminator, discriminator_optimizer):
     #Trains both the generator and discriminator for one epoch on the training dataset.
     #Returns the average generator and discriminator loss (scalar values, use the binary cross-entropy appropriately)
-    #TODO
     generator.train()
     discriminator.train()
     avg_generator_loss = 0
@@ -105,7 +104,6 @@ def train(generator, generator_optimizer, discriminator, discriminator_optimizer
 def test(generator, discriminator):
     #Runs both the generator and discriminator over the test dataset.
     #Returns the average generator and discriminator loss (scalar values, use the binary cross-entropy appropriately)
-    #TODO
     avg_generator_loss = 0
     avg_discriminator_loss = 0
     generator.eval()
